@@ -1,0 +1,36 @@
+.input-panel {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+    margin: 0 auto;
+   
+  }
+  
+  .panel-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center; /* Centralizar o conteúdo */
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+  }
+
+  button {
+    
+    margin-left: 7px;;
+  }
+
