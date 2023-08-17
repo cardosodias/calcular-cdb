@@ -1,14 +1,14 @@
 # Calcular Resgate de CDB
 
 **Objetivo do Projeto**
-Este projeto tem como objetivo aplicar as boas praticas de desenvolvimento, buscando ter um software mais coeso, baixo acoplamento, escalável e que facilite a manutenção. Aplicando os principios SOLID, padrão de projetos e teste de unidade.
+- Este projeto tem como objetivo aplicar as boas praticas de desenvolvimento, buscando ter um software mais coeso, baixo acoplamento, escalável e que facilite a manutenção. Aplicando os principios SOLID, padrão de projetos e teste de unidade.
 
 ## Requisitos
 
 Foi desenvolvidos dois projeto (back-end e fron-end) ambos em tecnologia diferentes.
 
-O Back-End na Linguagem C#/.NET 6.
-O Front-End em Angular 8.
+- O Back-End na Linguagem C#/.NET 6.
+- O Front-End em Angular 16.
 
 Certifique-se de ter os seguintes requisitos instalados:
 
@@ -18,4 +18,4 @@ Certifique-se de ter os seguintes requisitos instalados:
 - Angular CLI: 16.1.8
 
 
-- Para facilicar o clone dos dois projetos, deixei o projeto do front-end na raiz do projeto do back-end com o nome da pasta **ProjetoAngular**.
+Para facilicar o clone dos dois projetos, deixei o projeto do front-end na raiz do projeto do back-end com o nome da pasta **ProjetoAngular**.
