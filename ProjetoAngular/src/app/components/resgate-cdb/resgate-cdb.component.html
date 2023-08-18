@@ -15,7 +15,7 @@
     <label for="quantidadeMes" class="form-label">Quantidade de Meses</label>
     <input type="number" formControlName="quantidadeMes" class="form-control" id="quantidadeMes" placeholder="informe a quantidade de meses">
     <div *ngIf="formulario.get('quantidadeMes')?.hasError('min')" class="text-danger">
-      O valor deve ser maior que 0.
+      O valor deve ser maior que 1.
     </div>
   </div>
    <div class="form-group" [ngStyle]="{'text-align': 'right'}">    
@@ -33,9 +33,9 @@
     <hr>
     <p>Valor Solicitado : {{valorSolicitado}}</p>
     <hr>
-    <p>Rendimento Total Bruno : {{valorBruno}}</p>
+    <p>Investimento Total Bruno : {{valorBruno}}</p>
     <hr>
-    <p>Rendimento Total líquido : {{valorLiquido}}</p>
+    <p>Investimento Total líquido : {{valorLiquido}}</p>
   </div>
 
   <div *ngIf="canShowAlertaErro" class="alert alert-danger" role="alert">

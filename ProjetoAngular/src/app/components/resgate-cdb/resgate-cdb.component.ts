@@ -26,7 +26,7 @@ export class ResgateCdbComponent {
     this.canShow = false;
      this.formulario = this.formBuilder.group({
      valorResgate: [null, [Validators.required,Validators.min(0.01)]],
-     quantidadeMes:[null,  [Validators.required,Validators.min(0.01)]]
+     quantidadeMes:[null,  [Validators.required,Validators.min(2)]]
      })
   }
     
@@ -53,6 +53,7 @@ export class ResgateCdbComponent {
         this.valorSolicitado = this.formulario.value.valorResgate;
         this.canShow = true;
         this.formulario.reset();
+        this.canShowAlertaErro = false;
       },
       (error) => {        
         this.canShow = false;
