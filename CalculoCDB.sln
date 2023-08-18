@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoCDB.WebApi", "CalculoCDB.WebApi\CalculoCDB.WebApi.csproj", "{31DE8F9F-5FAF-4338-BF6A-02814D322621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoCDB.WebApi", "CalculoCDB.WebApi\CalculoCDB.WebApi.csproj", "{31DE8F9F-5FAF-4338-BF6A-02814D322621}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoCDB.Domain", "CalculoCDB.Domain\CalculoCDB.Domain.csproj", "{B48D3AD1-CD13-43C6-8AEE-057DC8CF224D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoCDB.Domain", "CalculoCDB.Domain\CalculoCDB.Domain.csproj", "{B48D3AD1-CD13-43C6-8AEE-057DC8CF224D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoCDB.Application", "CalculoCDB.Application\CalculoCDB.Application.csproj", "{44B290E5-3B4E-4888-A604-848AE4360115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoCDB.Application", "CalculoCDB.Application\CalculoCDB.Application.csproj", "{44B290E5-3B4E-4888-A604-848AE4360115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoCDB.Tests", "CalculoCDB.Tests\CalculoCDB.Tests.csproj", "{95412351-90CC-4404-8DC7-E570E16FE502}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoCDB.Tests", "CalculoCDB.Tests\CalculoCDB.Tests.csproj", "{95412351-90CC-4404-8DC7-E570E16FE502}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

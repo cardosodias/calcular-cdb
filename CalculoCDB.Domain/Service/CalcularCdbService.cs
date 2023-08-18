@@ -13,7 +13,7 @@ namespace CalculoCDB.Domain.Service
         {
             CalculateCdbFactory = calculateCdbFactory;
         }
-        public async Task<CdbResponseDto> CalcularResgateCDBAsync(Cdb cDB, CancellationToken cancellationToken)
+        public async Task<CdbResponseDto> CalcularResgateCdbAsync(Cdb cDB, CancellationToken cancellationToken)
         {           
             var instanciaCalculoCdb = CalculateCdbFactory.Create(cDB.QtdMes);
             var contexto = new CalcularCdbContext(instanciaCalculoCdb);

@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculoCDB.Application.Excpetions
-{    
-        public class Erro
+﻿namespace CalculoCDB.Application.Excpetions
+{
+    public class Erro
         {
-        public Erro(string campo, string menssagem)
+        public Erro(string campo, string mensagem)
         {
             Campo = campo;
-            Menssagem = menssagem;
+            Mensagem = mensagem;
         }
 
         public string Campo { get; }
-            public string Menssagem { get; }
+            public string Mensagem { get; }
         }    
 }

@@ -17,8 +17,8 @@ namespace CalculoCDB.Application.Validation
             RuleFor(x => x.QtdMes).Cascade(CascadeMode.Stop)
                                   .NotNull()
                                   .WithMessage("O valor não pode ser nulo")
-                                  .GreaterThan(0)
-                                  .WithMessage("O valor não pode ser menor ou igual a zero");
+                                  .GreaterThan(1)
+                                  .WithMessage("O valor não pode ser menor ou igual a 1(Um)");
         }
 
         protected override bool PreValidate(ValidationContext<Cdb> context, ValidationResult result)

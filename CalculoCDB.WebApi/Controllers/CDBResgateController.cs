@@ -9,21 +9,21 @@ namespace CalculoCDB.WebApi.Controllers
 {
     [Route("api/v1/cdb")]
     [ApiController]
-    public class CDBResgateController : ControllerBase
+    public class CdbResgateController : ControllerBase
     {
-        protected ICalcularCdbAppService CalcularCDBAppService { get; }
-        public CDBResgateController(ICalcularCdbAppService calcularCDBAppService)
+        protected ICalcularCdbAppService CalcularCdbAppService { get; }
+        public CdbResgateController(ICalcularCdbAppService calcularCdbAppService)
         {
-            CalcularCDBAppService = calcularCDBAppService;
+            CalcularCdbAppService = calcularCdbAppService;
         }
 
         [HttpPost("resgatar")]
         [ProducesResponseType(typeof(CdbResponseDto), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(ErroNegocio), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<ActionResult<CdbResponseDto>> ResgatarCDBAsync(CDBVM cDBVM, CancellationToken cancellationToken)
+        public async Task<ActionResult<CdbResponseDto>> ResgatarCdbAsync(CdbVm cdbVm, CancellationToken cancellationToken)
         {
-            return await CalcularCDBAppService.ResgatarCDBAsync(cDBVM.ConvertToCDB(), cancellationToken);
+            return await CalcularCdbAppService.ResgatarCdbAsync(cdbVm.ConvertToCdb(), cancellationToken);
         }        
     }
 }

@@ -4,16 +4,16 @@ namespace CalculoCDB.Domain.Strategy
 {
     public  class CalcularCdbContext
     {
-        protected ICalculateCdb CalculateCDB { get; }
+        protected ICalculateCdb CalculateCdb { get; }
 
-        public CalcularCdbContext(ICalculateCdb calculateCDB)
+        public CalcularCdbContext(ICalculateCdb calculateCdb)
         {
-            CalculateCDB = calculateCDB;
+            CalculateCdb = calculateCdb;
         }
 
         public async Task<CdbResponseDto> CalcularResgateCdb(int qtdMes, decimal valor)
         {
-            return await CalculateCDB.Calculate(qtdMes, valor);
+            return await CalculateCdb.Calculate(qtdMes, valor);
         }
                 
     }

@@ -1,6 +1,6 @@
 ﻿namespace CalculoCDB.Domain.Constantes
 {
-    public class TaxaImposto
+    public static class TaxaImposto
     {
         public const decimal TaxaAte6Meses = 0.225M; // 22.5%
         public const decimal TaxaAte12Meses = 0.20M; // 20%

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CalculoCDB.WebApi.Models
 {
-    public class CDBVM
+    public class CdbVm
     {
         [Required]
         public decimal ValorResgate { get; set; }
@@ -11,7 +11,7 @@ namespace CalculoCDB.WebApi.Models
         [Required]
         public int QtdMes { get; set; }
 
-        public Cdb ConvertToCDB()
+        public Cdb ConvertToCdb()
         {
             return new Cdb(ValorResgate, QtdMes);
         }

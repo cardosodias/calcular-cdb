@@ -5,6 +5,6 @@ namespace CalculoCDB.Application.Interfaces
 {
     public interface ICalcularCdbAppService
     {
-        Task<CdbResponseDto> ResgatarCDBAsync(Cdb cDB,CancellationToken cancellationToken);
+        Task<CdbResponseDto> ResgatarCdbAsync(Cdb cDB,CancellationToken cancellationToken);
     }
 }

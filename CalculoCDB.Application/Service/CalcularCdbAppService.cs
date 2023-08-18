@@ -9,18 +9,18 @@ namespace CalculoCDB.Application.Service
 {
     public class CalcularCdbAppService : ICalcularCdbAppService
     {
-        protected ICalcularCdbService CalcularCDBService { get; }
-        protected IValidator<Cdb> ValidatorCDB { get; }
-        public CalcularCdbAppService(ICalcularCdbService calcularCDBService, IValidator<Cdb> validatorCDB)
+        protected ICalcularCdbService CalcularCdbService { get; }
+        protected IValidator<Cdb> ValidatorCdb { get; }
+        public CalcularCdbAppService(ICalcularCdbService calcularCdbService, IValidator<Cdb> validatorCdb)
         {
-            CalcularCDBService = calcularCDBService;
-            ValidatorCDB = validatorCDB;
+            CalcularCdbService = calcularCdbService;
+            ValidatorCdb = validatorCdb;
         }
 
 
-        public async Task<CdbResponseDto> ResgatarCDBAsync(Cdb cDB, CancellationToken cancellationToken)
+        public async Task<CdbResponseDto> ResgatarCdbAsync(Cdb cDB, CancellationToken cancellationToken)
         {
-            var validadorResult = await ValidatorCDB.ValidateAsync(cDB);
+            var validadorResult = await ValidatorCdb.ValidateAsync(cDB);
 
             if (!validadorResult.IsValid)
             {
@@ -28,7 +28,7 @@ namespace CalculoCDB.Application.Service
                 throw new ValidacaoException(erros);
             }
 
-            return await CalcularCDBService.CalcularResgateCDBAsync(cDB, cancellationToken);
+            return await CalcularCdbService.CalcularResgateCdbAsync(cDB, cancellationToken);
         }
     }
 }
